@@ -65,11 +65,6 @@ If the name is missing:
 
 Commands beginning with “p” produce PUBLIC output in local chat.
 
-These are useful for:
-- Demonstrations
-- Tools that show info to groups
-- Shared terminals or RP devices
-
 Public lookup by UUID:
 
     /2 p lookup avatar <uuid>
