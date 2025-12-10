@@ -61,7 +61,7 @@ If the name is missing:
 
 --------------------------------------------------------------------
 
-## PUBLIC COMMANDS (visible to everyone nearby)
+## PUBLIC COMMANDS 
 
 Commands beginning with “p” produce PUBLIC output in local chat.
 
