@@ -6,7 +6,7 @@ An LSL utility script for Second Life that resolves avatar information by UUID o
 - Legacy Name
 - Account Age (in days)
 - UUID
-- A clickable About link (secondlife:///app/agent/<uuid>/about)
+- A clickable About link (secondlife:///app/agent/[uuid]/about)
 
 The script provides both private (owner-only) lookups and public (local chat) lookups using a simple prefix system.
 
