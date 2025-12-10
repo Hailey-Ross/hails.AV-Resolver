@@ -53,6 +53,7 @@ Example:
 
     /2 lookup name Hailey
     /2 lookup name Hailey Enfield
+    /2 lookup name Hailey.Enfield
 
 If the name is missing:
 
