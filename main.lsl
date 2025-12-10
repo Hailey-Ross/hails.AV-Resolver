@@ -1,3 +1,8 @@
+//Script Created by Hailey Enfield
+//Site: https://u.hails.cc/Links
+//Github: https://github.com/Hailey-Ross/hails.AV-Resolver
+//PLEASE LEAVE ALL CREDITS/COMMENTS INTACT
+
 integer gPinkListener = -1;
 
 list gNameReqList      = [];
