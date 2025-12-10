@@ -25,8 +25,6 @@ The script listens on channel 2 for commands. When you request a lookup:
    - Privately to the owner (llOwnerSay)
    - Publicly to local chat (llSay(0)) if you use the "p" version of the command
 
-The script also safely handles multiple simultaneous lookups.
-
 --------------------------------------------------------------------
 
 ## Commands
