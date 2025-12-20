@@ -53,6 +53,18 @@ integer dateToJDN(integer y, integer m, integer d) {
     return jdn;
 }
 
+string primfeedLinkFromLegacy(string legacyName) {
+    string lower = llToLower(legacyName);
+    list parts = llParseString2List(lower, [" "], []);
+    if (llGetListLength(parts) >= 2) {
+        return "https://www.primfeed.com/" 
+            + llList2String(parts, 0) 
+            + "." 
+            + llList2String(parts, 1);
+    }
+    return "";
+}
+
 integer ageInDays(string born) {
     if (born == "") return -1;
     integer by = (integer)llGetSubString(born, 0, 3);
@@ -122,8 +134,14 @@ integer maybePrintAgentInfo(key targetKey, integer idx) {
         msg += "• Account Age: " + (string)ageDays + " days\n";
     }
 
+    string primfeed = primfeedLinkFromLegacy(legacy);
+
     msg += "• UUID: " + (string)targetKey + "\n";
     msg += "• About: " + aboutURI;
+
+    if (primfeed != "") {
+    msg += "\n• Primfeed: " + primfeed;
+    }
 
     integer isPublic = llList2Integer(gAgentIsPublic, idx);
     if (isPublic) {
