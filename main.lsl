@@ -53,6 +53,10 @@ integer dateToJDN(integer y, integer m, integer d) {
     return jdn;
 }
 
+string buildWikiLink(string legacyName) {
+    return "https://wiki.secondlife.com/wiki/" + llDumpList2String(llParseString2List(legacyName, [" "], []), "_");
+}
+
 string primfeedLinkFromLegacy(string legacyName) {
     string lower = llToLower(legacyName);
     list parts = llParseString2List(lower, [" "], []);
@@ -121,6 +125,7 @@ integer maybePrintAgentInfo(key targetKey, integer idx) {
     integer ageDays = ageInDays(born);
 
     string aboutURI = "secondlife:///app/agent/" + (string)targetKey + "/about";
+    string wikiURL = buildWikiLink(legacy);
 
     string msg = "Avatar:\n";
 
@@ -138,6 +143,8 @@ integer maybePrintAgentInfo(key targetKey, integer idx) {
 
     msg += "• UUID: " + (string)targetKey + "\n";
     msg += "• About: " + aboutURI;
+    msg += "\n• Wiki: " + wikiURL;
+
 
     if (primfeed != "") {
     msg += "\n• Primfeed: " + primfeed;
