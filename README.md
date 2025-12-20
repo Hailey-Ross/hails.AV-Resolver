@@ -84,9 +84,11 @@ A successful lookup prints:
     Avatar:
     • Display Name: hails
     • Legacy Name: hailey.enfield
-    • Account Age: 7297 days
+    • Account Age: 7307 days
     • UUID: 0fc458f0-50c4-4d6f-95a6-965be6e977ad
     • About: secondlife:///app/agent/0fc458f0-50c4-4d6f-95a6-965be6e977ad/about
+    • Wiki:  https://wiki.secondlife.com/wiki/Hailey_Enfield
+    • Primfeed: https://www.primfeed.com/hailey.enfield
 
 Notes:
 - Display Name is omitted if empty.
