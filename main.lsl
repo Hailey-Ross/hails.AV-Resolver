@@ -1,5 +1,5 @@
 //Script Created by Hailey Enfield
-//Site: https://u.hails.cc/Links
+//Site: https://links.hails.cc
 //Github: https://github.com/Hailey-Ross/hails.AV-Resolver
 //PLEASE LEAVE ALL CREDITS/COMMENTS INTACT
 
